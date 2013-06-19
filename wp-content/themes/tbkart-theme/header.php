@@ -46,33 +46,30 @@
 
 	<div id="page-wrap">
 
-		<nav class="menu-1">
-			<div class="menu-btn1" onclick="clicked-menu(0);" style="margin: 20px 0px 0px 35px;"></div>
-			<div class="menu-btn1" onclick="clicked-menu(1);" style="margin: 20px 0px 0px 195px;"></div>
-			<div class="menu-btn1" onclick="clicked-menu(2);" style="margin: 20px 0px 0px 345px; width:140px;"></div>
-			<div class="menu-btn1" onclick="clicked-menu(3);" style="margin: 20px 0px 0px 515px; width:130px;"></div>
-			<div class="menu-btn1" onclick="clicked-menu(4);" style="margin: 20px 0px 0px 695px;"></div>
-
-
-			<div class="menu-selector"></div>
-		</nav>
-
-
-		<div class="main-cont clear-fix">
+		<header class="main">
+			<div class="container clear-fix">
 				
-			<section id="header" class="header">
-			
-				
-				<div class="bnr-img">
-					<!--<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>-->
-					<div class="bnr-txt">
-						<h1>Noticas de Salud </h1>
-						<div class="description"><?php bloginfo('description'); ?></div>
-					</div>
+				<div class="logo float-left">
+
+					<img class="width-100" src="wp-content/themes/tbkart-theme/img/logo.png" alt="tb kart">
 
 				</div>
-
-			</section>
+				<aside class="search float-right">
+					<?php get_search_form(); ?>
+				</aside>
+				<nav class="main float-right">
+					<ul class="menu-1 float-right">
+						
+						<li><a href="#">Contacto</a></li>
+						<li><a href="#">Noticias</a></li>
+						<li><a href="#">Productos</a></li>
+						<li><a href="#">Inicio</a></li>
+					</ul>
+				</nav>
+				
+				
+			</div>
+		</header>
 
 
 
