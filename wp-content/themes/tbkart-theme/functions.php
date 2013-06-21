@@ -31,4 +31,24 @@
     	));
     }
 
+
+
+    if (function_exists('register_nav_menus')) {
+    register_nav_menus(
+        array(
+                'main-nav' => 'Menu 1'
+            )
+
+
+        );
+    }
+
+
+    function five_posts_on_homepage( $query ) {
+        if ( $query->is_home() && $query->is_main_query() ) {
+            $query->set( 'posts_per_page', '3' );
+        }
+    }
+    add_action( 'pre_get_posts', 'five_posts_on_homepage' );
+
 ?>

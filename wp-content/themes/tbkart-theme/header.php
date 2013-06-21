@@ -58,13 +58,15 @@
 					<?php get_search_form(); ?>
 				</aside>
 				<nav class="main float-right">
-					<ul class="menu-1 float-right">
-						
-						<li><a href="#">Contacto</a></li>
-						<li><a href="#">Noticias</a></li>
-						<li><a href="#">Productos</a></li>
-						<li><a href="#">Inicio</a></li>
-					</ul>
+					
+					<?php wp_nav_menu(array('menu' =>'Menu 1')); ?>
+
+
+
+					<!--
+
+					
+					-->
 				</nav>
 				
 				

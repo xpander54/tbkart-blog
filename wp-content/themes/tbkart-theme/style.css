@@ -15,6 +15,40 @@ Version: 2
 	font-family: 'Alef', sans-serif;
 }
 
+ul
+{
+	list-style-type: none;
+}
+
+a:link {text-decoration:none; color: #00BB76;}
+a:visited {text-decoration:none; color: #00BB76;}
+a:hover {text-decoration:underline; color: #00BB76;}
+a:active {text-decoration:underline; color: #00BB76;}
+
+
+textarea
+{
+	background: #F7F7F7;
+	border: none;
+	border-radius: 0;
+}
+
+.archive-posts input[type='submit'] 
+{
+	border: none;
+	background: #E2E2E2;
+	padding: 1em;
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+.post-separador
+{
+	height: 2px;
+	width: 60%;
+	background: #171717;
+	margin: 1em 0;
+}
 
 .page-wrap
 {
@@ -64,12 +98,9 @@ nav.main
 	font-size: 18px;
 }
 
-nav.main a:link, .post-title a:link {text-decoration:none; color: #00BB76;}
-nav.main a:visited, .post-title a:visited {text-decoration:none; color: #00BB76;}
-nav.main a:hover, .post-title a:hover {text-decoration:underline; color: #00BB76;}
-nav.main a:active, .post-title a:active {text-decoration:underline; color: #00BB76;}
 
-.menu-1
+
+#menu-menu-1
 {
 	list-style: none;
 	width: 85%;
@@ -78,7 +109,7 @@ nav.main a:active, .post-title a:active {text-decoration:underline; color: #00BB
 
 }
 
-.menu-1 li
+#menu-menu-1 li
 {
 	font-weight: bold;
 	float: right;
@@ -102,6 +133,17 @@ nav.main a:active, .post-title a:active {text-decoration:underline; color: #00BB
 .slide
 {
 	padding: 0;
+}
+
+.aside
+{
+	max-width: 1280px;
+	min-width: 70%
+}
+
+.aside-sidebar
+{
+	padding-left: 4em;
 }
 
 .main-cont
@@ -128,6 +170,13 @@ nav.main a:active, .post-title a:active {text-decoration:underline; color: #00BB
 	margin: 1em 2em;
 }
 
+.archive-posts
+{
+	background: #F0F0ED;
+	max-width: 1252px;
+	margin-bottom: 1em;
+}
+
 .producto-1
 {
 	/*margin: -7px 10px 0px -5px;*/
@@ -142,6 +191,10 @@ nav.main a:active, .post-title a:active {text-decoration:underline; color: #00BB
 }
 
 
+.max-1280
+{
+	max-width: 1280px;
+}
 
 .post-title
 {
@@ -164,15 +217,38 @@ nav.main a:active, .post-title a:active {text-decoration:underline; color: #00BB
 	width: 100%;
 }
 
+.menu-admin
+{
+	background: #121214;
+	color: white;
+	bottom: 0;
 
+}
+
+.menu-admin h2
+{
+	font-size: 18px;
+}
+
+.menu-admin-ul li
+{
+	width: 18%;
+	font-size: 12px;
+}
+
+.menu-admin-links-ul li
+{
+	width: 100%;
+}
 
 .footer
 {
 	bottom: 0;
-	background: #121214;
+	background: #0C0C0C;
 	text-align: center;
 	color: white;
 	min-height: 5em;
+	width: 100%;
 }
 
 .clear-fix:after
@@ -194,7 +270,10 @@ nav.main a:active, .post-title a:active {text-decoration:underline; color: #00BB
 	float: left;
 }
 
-
+.center
+{
+	margin:0 auto;
+}
 
 @media screen {
 

@@ -1,6 +1,6 @@
 
 
-<article class="post dapost">
+<article class="nfo">
 
 <?php
 

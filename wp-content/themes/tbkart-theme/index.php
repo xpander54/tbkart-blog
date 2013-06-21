@@ -1,13 +1,9 @@
 <?php get_header(); ?>
 
-<!--
-	<article class="aside">
-				
-		<?php get_sidebar(); ?>
-	
-	</article>
 
--->
+	
+
+
 
 		<section class="main slide-show">
 			<div class="container">
@@ -23,21 +19,18 @@
 
 		<section class="main-cont main">
 			
-			<div class="container">
-				<h2>Lorem ipsum <em>dolor</em> sit amet</h2>
+			<div class="container clear-fix">
+				<h2>TB Kart <em>México</em></h2>
 				<p>
+				<h1>
+					Somos lideres en venta de karts profecionales.
 					
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			</p>
-			<p>
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.
-			</p><p> Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		
-				</p>	
+				</h1>
+					
+				</p>
+				
+					
+					
 
 			</div>
 			
@@ -49,13 +42,12 @@
 			<div class="container clear-fix">
 
 				<article class="nfo">
-					<h2>Duis aute irure dolor</h2>
-					Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<h2>Últimas Noticias</h2>
+						Karts, eventos, galerias y publicaciones.
 				</article>
 
 
+				<?php// if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
@@ -69,7 +61,11 @@
 						<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 						<h3>
 							<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
-							<?php the_content(); ?>
+							
+							<?php// the_content(); ?>
+							<?php the_excerpt(); ?> 
+
+
 							<?php the_tags('Tags: ', ', ', '<br />'); ?>
 						Publicado en <?php the_category(', ') ?> | 
 						<?php comments_popup_link('Sin comentarios &#187;', '1 Comentario &#187;', '% Commentarios &#187;'); ?>
@@ -77,15 +73,15 @@
 					</div>
 				</article>
 
-		<?php endwhile; ?>
+				<?php endwhile; ?>
 
-		<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
+				<?php //include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
-		<?php else : ?>
+				<?php else : ?>
 
-			<h2>Sin Resultados</h2>
+					<h2>Sin Resultados</h2>
 
-		<?php endif; ?>
+				<?php endif; ?>
 
 
 				

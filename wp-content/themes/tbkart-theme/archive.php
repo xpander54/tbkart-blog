@@ -1,66 +1,105 @@
 <?php get_header(); ?>
 
-	<article class="aside">
-		
-		<?php get_sidebar(); ?>
-	</article>
-
-
-	<article class="post posts">
-			<?php if (have_posts()) : ?>
-
-	 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-
-				<?php /* If this is a category archive */ if (is_category()) { ?>
-					<h2>Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h2>
-
-				<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-					<h2>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
-
-				<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-					<h2>Archive for <?php the_time('F jS, Y'); ?></h2>
-
-				<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-					<h2>Archive for <?php the_time('F, Y'); ?></h2>
-
-				<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-					<h2>Archive for <?php the_time('Y'); ?></h2>
-
-				<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-					<h2>Author Archive</h2>
-
-				<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-					<h2>Blog Archives</h2>
+		<section class="main slide-show">
+			<div class="container">
 				
-				<?php } ?>
+				<div class="slide">
 
-				<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
-
-				<?php while (have_posts()) : the_post(); ?>
-				
-					<div <?php post_class() ?>>
+					<img class="width-100" src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide-show.jpg" alt="tb kart">
 					
-						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-						
-						<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+				</div>
 
-						<div class="entry">
-							<?php the_content(); ?>
+			</div>
+		</section>
+
+		<section class="main-cont main clear-fix">
+			
+			<div class="container clear-fix">
+				<h2>Lorem ipsum <em>dolor</em> sit amet</h2>
+				<p>
+					
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				</p>
+				
+					
+					
+
+			</div>
+			
+		</section>
+
+
+	<section class="main news">
+			<div class="container clear-fix">
+
+				<article class="nfo">
+					<h2>Duis aute irure dolor</h2>
+					Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</article>
+
+
+				<?php if (have_posts()) : ?>
+
+		 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+
+					<?php /* If this is a category archive */ if (is_category()) { ?>
+						<h2>Archivo de la categoría&#8216;<?php single_cat_title(); ?>&#8217;</h2>
+
+					<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
+						<h2>Posts con el tag &#8216;<?php single_tag_title(); ?>&#8217;</h2>
+
+					<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
+						<h2>Archivo del día <?php the_time('F jS, Y'); ?></h2>
+
+					<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+						<h2>Archivo del mes de <?php the_time('F, Y'); ?></h2>
+
+					<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+						<h2>Archivo del año <?php the_time('Y'); ?></h2>
+
+					<?php /* If this is an author archive */ } elseif (is_author()) { ?>
+						<h2>Archivo del autor: </h2>
+
+					<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+						<h2>Archivos del blog</h2>
+					
+					<?php } ?>
+
+					<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
+
+					<?php while (have_posts()) : the_post(); ?>
+					
+						<!--<div <?php post_class() ?>>-->
+							<div style="" class="nfo archive-posts">
+						
+							<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+							
+							<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+
+							<div class="entry width-100">
+								<?php //the_content(); ?>
+								<?php the_excerpt(); ?> 
+
+							</div>
+
 						</div>
 
-					</div>
+					<?php endwhile; ?>
 
-				<?php endwhile; ?>
+					<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
+					
+					<?php else : ?>
 
-				<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
-				
-		<?php else : ?>
+						<h2>No hay resultados.</h2>
 
-			<h2>No hay resultados.</h2>
+					<?php endif; ?>
 
-		<?php endif; ?>
 
-	</article>
+			</div>
+
+	</section>
 
 
 
