@@ -15,10 +15,10 @@
 		<section class="main-cont main clear-fix">
 			
 			<div class="container clear-fix">
-				<h2>Lorem ipsum <em>dolor</em> sit amet</h2>
+				<h2>TB Kart <em>México</em></h2>
 				<p>
 					
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					Somos líderes en venta de karts profecionales.
 				</p>
 				
 					
@@ -33,10 +33,8 @@
 			<div class="container clear-fix">
 
 				<article class="nfo">
-					<h2>Duis aute irure dolor</h2>
-					Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<h2>Archivo</h2>
+					Aqui almacenamos todas nuestras publicaciones anteriores.
 				</article>
 
 

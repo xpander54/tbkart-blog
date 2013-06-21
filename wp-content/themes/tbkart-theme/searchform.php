@@ -1,5 +1,5 @@
 <form action="<?php bloginfo('siteurl'); ?>" id="searchform" method="get">
-    <div>
+    <div class="search-btn">
         <label for="s" class="screen-reader-text">Buscar:</label>
         <input type="text" id="s" name="s" value="" />
         

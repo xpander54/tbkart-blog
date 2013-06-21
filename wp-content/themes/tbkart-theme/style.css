@@ -93,9 +93,12 @@ header.main .container
 
 nav.main
 {
-	width: 70%;
+	width: 60%;
 	font-weight: bolder;
 	font-size: 18px;
+	right: 0;
+	position: absolute;
+	margin: 50px -50px 0 0;
 }
 
 
@@ -117,9 +120,9 @@ nav.main
 	padding: 1em 1em 0 2em;
 }
 
-.search
+.search-btn
 {
-	width: 60%;
+	width: 100%;
 	text-align: right;
 	padding: 1em 1em 0 0;
 }

@@ -1,47 +1,76 @@
 <?php get_header(); ?>
 
-<article class="aside">
+
+
+
+	<section class="main slide-show">
+		<div class="container">
+			
+			<div class="slide">
+
+				<img class="width-100" src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide-show.jpg" alt="tb kart">
 				
-	<?php get_sidebar(); ?>
-	
-</article>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="main-cont main">
+		
+		<div class="container clear-fix">
+			<h2>TB Kart <em>México</em></h2>
+			
+			<h1>
+				Somos líderes en venta de karts profecionales.
+				
+			</h1>
+
+		</div>
+		
+	</section>
+
+	<section class="main news">
+		<div class="container clear-fix">
+
+			<br><br>
 
 
-<article class="posts post">
-	
-	<?php if (have_posts()) : ?>
+			<h2>Resultados de búsqueda</h2>
 
-		<h2>Search Results</h2>
+			<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
-		<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
+			
+			<div style="" class="nfo archive-posts">
+				
+				<?php if (have_posts()) : ?>
 
-		<?php while (have_posts()) : the_post(); ?>
+				<?php while (have_posts()) : the_post(); ?>
 
-			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					<ul>
+					    <!--<li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>-->
+					    <li id="post-<?php the_ID(); ?>"><h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2></li>
+						<li><?php include (TEMPLATEPATH . '/inc/meta.php' ); ?></li>
+					    <li><?php the_excerpt(); ?></li>
+					</ul>
+					<div class="post-separador"></div>
 
-				<h2><?php the_title(); ?></h2>
 
-				<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+				<?php endwhile; ?>
+				<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
+				<?php else : ?>
+					<h2>No hay Resultados.</h2>
 
-				<div class="entry">
-					<?php the_excerpt(); ?>
-				</div>
+				<?php endif; ?>
 
 			</div>
 
-		<?php endwhile; ?>
+		</div>
+			
+	</section>
 
-		<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
-	<?php else : ?>
 
-		<h2>No hay Resultados.</h2>
 
-	<?php endif; ?>
 
-</article>
-	
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

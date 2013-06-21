@@ -57,20 +57,19 @@
 				<aside class="search float-right">
 					<?php get_search_form(); ?>
 				</aside>
+	
+			
+				
 				<nav class="main float-right">
 					
 					<?php wp_nav_menu(array('menu' =>'Menu 1')); ?>
 
-
-
-					<!--
-
-					
-					-->
 				</nav>
 				
-				
 			</div>
+				
+				
+			
 		</header>
 
 

@@ -20,7 +20,7 @@
 				<h2>TB Kart <em>México</em></h2>
 				<p>
 				<h1>
-					Somos lideres en venta de karts profecionales.
+					Somos líderes en venta de karts profecionales.
 					
 				</h1>
 					
