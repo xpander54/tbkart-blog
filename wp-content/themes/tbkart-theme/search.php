@@ -3,17 +3,7 @@
 
 
 
-	<section class="main slide-show">
-		<div class="container">
-			
-			<div class="slide">
-
-				<img class="width-100" src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide-show.jpg" alt="tb kart">
-				
-			</div>
-
-		</div>
-	</section>
+	
 
 	<section class="main-cont main">
 		

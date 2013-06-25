@@ -6,8 +6,13 @@
 	// Load jQuery
 	if ( !is_admin() ) {
 	   wp_deregister_script('jquery');
-	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"), false);
+	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"), false);
 	   wp_enqueue_script('jquery');
+       //console.log("run javascript");
+       wp_register_script('bootstrap', get_bloginfo('template_directory')."/js/bootstrap.min.js");
+       wp_enqueue_script('bootstrap');
+    //   wp_register_script('script-carousel', get_bloginfo('template_directory')."/js/script.js");
+      // wp_enqueue_script('script-carousel');
 	}
 	
 	// Clean up the <head>

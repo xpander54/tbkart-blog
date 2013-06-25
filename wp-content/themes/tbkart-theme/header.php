@@ -30,12 +30,20 @@
 	</title>
 	
 	<link rel="shortcut icon" href="/favicon.ico">
+
+
+
+	
+	<link href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap-responsive.min.css" rel="stylesheet"> 
+	<link href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css" rel="stylesheet">
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
+
+	
 
 	<?php wp_head(); ?>
 </head>
@@ -50,6 +58,8 @@
 			<div class="container clear-fix">
 				
 				<div class="logo float-left">
+
+					
 
 					<img class="width-100" src="wp-content/themes/tbkart-theme/img/logo.png" alt="tb kart">
 
@@ -71,6 +81,85 @@
 				
 			
 		</header>
+
+		<section class="main slide-show">
+			<div class="slide-container">
+				
+				<div class="slide">
+
+					
+					
+
+
+					<!--Bootstrap-->
+				
+				
+					<div id="myCarousel" class="carousel slide">
+
+		              <ol class="carousel-indicators">
+
+		                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		                <li data-target="#myCarousel" data-slide-to="1"></li>
+		                <li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
+		              </ol>
+
+		              <!-- Carousel items -->
+		              <div class="carousel-inner">
+
+		                <div class="active item">
+		                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide1.jpg" class="slide-img" alt="karts profecionales">
+		                </div>
+		                <div class="item">
+		                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide2.jpg" class="slide-img" alt="kart">
+		                </div>
+		                <div class="item">
+		                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide3.jpg" alt="karts" class="slide-img">
+		                </div>
+		                <div class="item">
+		                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide4.jpg" alt="tb kart" class="slide-img">
+		                </div>
+		                <div class="item">
+		                  <img src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide5.jpg" alt="tb kart" class="slide-img">
+		                </div>
+
+
+		              </div>
+		              <!-- Carousel nav 
+		              <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		              <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		              
+		              
+		              -->
+		            </div> 
+
+					<!--/Bootstrap-->
+
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="main-cont main">
+			
+			<div class="container clear-fix">
+				<h2>TB Kart <em>México</em></h2>
+				<p>
+				<h1>
+					Somos líderes en venta de karts profecionales.
+					
+				</h1>
+					
+				</p>
+				
+					
+					
+
+			</div>
+			
+		</section>
 
 
 

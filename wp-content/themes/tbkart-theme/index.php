@@ -5,36 +5,7 @@
 
 
 
-		<section class="main slide-show">
-			<div class="container">
-				
-				<div class="slide">
-
-					<img class="width-100" src="<?php bloginfo('stylesheet_directory'); ?>/img/slide-1/slide-show.jpg" alt="tb kart">
-					
-				</div>
-
-			</div>
-		</section>
-
-		<section class="main-cont main">
-			
-			<div class="container clear-fix">
-				<h2>TB Kart <em>México</em></h2>
-				<p>
-				<h1>
-					Somos líderes en venta de karts profecionales.
-					
-				</h1>
-					
-				</p>
-				
-					
-					
-
-			</div>
-			
-		</section>
+		
 	
 
 
