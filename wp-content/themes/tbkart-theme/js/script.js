@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	$('.carousel').carousel({ interval: 3000, pause: 'true' });
-	console.log("que pedo");
+	$('.carousel').carousel({ interval: 5000, pause: 'false' });
+//	console.log("que pedo");
 
 
 
