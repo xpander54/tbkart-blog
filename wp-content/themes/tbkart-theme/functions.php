@@ -11,8 +11,8 @@
        //console.log("run javascript");
        wp_register_script('bootstrap', get_bloginfo('template_directory')."/js/bootstrap.min.js");
        wp_enqueue_script('bootstrap');
-    //   wp_register_script('script-carousel', get_bloginfo('template_directory')."/js/script.js");
-      // wp_enqueue_script('script-carousel');
+       wp_register_script('script-carousel', get_bloginfo('template_directory')."/js/script.js");
+       wp_enqueue_script('script-carousel');
 	}
 	
 	// Clean up the <head>
