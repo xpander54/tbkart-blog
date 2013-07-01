@@ -12,7 +12,7 @@
 
 	<section class="main news">
 		<div class="container clear-fix">
-
+<!--
 			<article class="nfo">
 				<h2>Duis aute irure dolor</h2>
 				Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -20,7 +20,7 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</article>
 
-
+-->
 
 
 

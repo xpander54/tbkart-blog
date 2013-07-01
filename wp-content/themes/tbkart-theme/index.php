@@ -22,9 +22,11 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-				<article class="post" id="post-<?php the_ID(); ?>">
+				<article class="post" id="post-<?php the_ID(); $upload_dir = wp_upload_dir(); ?>">
 					<div class="producto-1">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/destacados/kart.png" alt="tb kart mexico">
+						<!--<img src="<?php// bloginfo('stylesheet_directory'); ?>/img/destacados/kart.png" alt="tb kart mexico">-->
+						<img src="<?php echo $upload_dir['baseurl'] .'/' .get_post_meta($post->ID, "imagen_destacada", true) ?>" alt="tb kart mexico">
+						
 
 					</div>
 
