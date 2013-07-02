@@ -55,7 +55,7 @@
 	<div id="page-wrap">
 
 		<header class="main">
-			<div class="container clear-fix">
+			<div class="container1 clear-fix">
 				
 				<div class="logo float-left">
 
@@ -64,7 +64,7 @@
 					<img class="width-100" src="wp-content/themes/tbkart-theme/img/logo.png" alt="tb kart">
 
 				</div>
-				<aside class="search float-right">
+				<aside class="search">
 					<?php get_search_form(); ?>
 				</aside>
 	
